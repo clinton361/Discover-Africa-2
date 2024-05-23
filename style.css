@@ -1,0 +1,691 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: 'computer says no';
+    src: url(computer-says-no/computer-says-no.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* -----UTILITIES----- */
+.h1{
+    font-family: 'Computer says no';
+    font-weight: 400;
+    font-size: 224px;
+    line-height: 131.5px;
+}
+
+.h2{
+    font-family: 'Computer says no';
+    font-weight: 400;
+    font-size: 104px;
+    line-height: 68px;
+}
+
+.h3{
+    font-family: 'work sans';
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 42px;
+}
+
+.p-work-sans{
+    font-family: 'work sans';
+    font-weight: 400;
+    font-size: 32px;
+}
+
+.p-roboto{
+    font-family: 'roboto';
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.yellow-btn{
+    background-color: #FFDE59;
+    border-radius: 64px;
+    padding: 16px 32px;
+    font-family: 'roboto';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    border: none;
+}
+
+.trans-btn{
+    background-color: transparent;
+    border-radius: 64px;
+    padding: 16px 32px;
+    font-family: 'roboto';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    border: 1px solid #fff;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.hidden{
+    display: none;
+}
+
+.mobile-menu-header,
+i.fa-bars{
+    display: none;
+}
+
+/* -----HEADER / 1st Section----- */
+#header{
+    height: 100vh;
+    position: relative;
+}
+
+#header nav{
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-inline: 0 20px;
+    position: relative;
+}
+
+ul.dropdown{
+    border: 1px solid black;
+    border-radius: 10px;
+    position: absolute;
+    min-width: fit-content;
+    padding: 8px 0;
+    top: 25px;
+    background-color: #fff;
+    z-index: 1;
+}
+
+ul.dropdown li{
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 10px 15px 10px 10px;
+}
+
+main .container{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: auto;
+    width: 90%;
+    color: #fff;
+}
+
+h1 span{
+    background-color: #FFDE59;
+}
+
+main i{
+    background-color: #FFDE59;
+    border-radius: 50%;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 100;
+    position: absolute;
+    top: 100%;
+    left: 90%;
+    color: #000;
+}
+
+/* <!-- -----TRIBAL SERIES / 2ND Section --> */
+#tribal{
+    background-color: black;
+    color: #fff;
+    padding: 100px 0;
+}
+
+#tribal .container{
+    background-image: url(./img/tribal\ series\ banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+    padding: 50px;
+    width: 100%;
+}
+
+#tribal h3{
+    font-size: 56px;
+    font-weight: 700;
+    margin: 30px 0;
+}
+
+#tribal p{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 42px;
+    margin: 30px 0;
+}
+
+#tribal button{
+    color: #fff;
+    font-size: 16px;
+}
+
+/* I have to work onthe position of  the 3 images and make them float/adjust with screen size */
+#tribal .col-right{
+    position: relative;
+}
+
+#tribal .col-right img{
+    width: 90px;
+}
+
+#tribal .giraffe{
+    position: absolute;
+    top: -90px;
+    left: 500px;
+}
+
+#tribal .three{
+    position: absolute;
+    top: 36px;
+    left: 680px;
+}
+
+#tribal .woman{
+    position: absolute;
+    top: -120px;
+    left: 750px;
+} 
+
+/* <!-- TRIBAL SERIES BLACK / 3rd Section --> */
+
+#tribal-black{
+    background-color: black;
+    color: #fff;
+    position: relative;
+    margin-bottom: 200px;
+}
+
+#tribal-black .container{
+    align-items: start;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 250px;
+}
+
+#tribal-black .col-left p{
+    font-size: 20px;
+    line-height: 30px;
+    margin: 20px 0;
+}
+
+#tribal-black .col-right img{
+    z-index: -1;
+    /* width: 100%; */
+    /* flex-basis: 60%; */
+}
+
+#tribal-black .white{
+    background-color: #fff;
+    border-radius: 10px;
+    position: absolute;
+    top: 480px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: black;
+    padding: 40px 30px;
+    border: 1px solid black;
+}
+
+#tribal-black .white .row{
+    align-items: start;
+}
+
+#tribal-black .tribe{
+    border: 1px solid black;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+#tribal-black .tribe:first-of-type{
+    background-color: #FFDE59;
+}
+
+#tribal-black .tribe img{
+    width: 50px;
+    margin-right: 20px;
+}
+
+#tribal-black .tribe p{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+#tribal-black .white .col-left{
+    flex-basis: 100%;
+}
+
+#tribal-black .part{
+    background-color: #FFDE59;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 5px 15px;
+}
+
+#tribal-black .sub-part{
+    background-color: #FFFDF2;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin: 10px 0;
+    padding: 25px 15px;
+}
+
+#tribal-black .sub-part h5{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+#tribal-black .sub-part p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-block: 20px;
+}
+
+#tribal-black .sub-part a{
+    color: black;
+    text-decoration: underline;
+}
+
+#tribal-black .sub-part span{
+    margin-left: 5px;
+}
+
+/* <!-- -----CULTURAL SPACES / 4th Section --> */
+#cultural{
+    padding: 80px 60px;
+}
+
+#cultural p{
+    font-size: 20px;
+    margin-block: 15px;
+}
+
+#cultural .col-left{
+    flex-basis: 48%;
+}
+
+#cultural .col-right{
+    margin: auto;
+}
+
+.layer1 i{
+    background-color: #FFDE59;
+    border-radius: 50%;
+    padding: 30px;
+}
+
+.layer2{
+    background-color: rgba(255,222,89,0.3);
+    border-radius: 50%;
+    padding: 30px;
+}
+
+.layer3{
+    background-color: rgba(255,222,89,0.2);
+    border-radius: 50%;
+    padding: 30px;
+}
+
+.layer4{
+    background-color: rgba(255,222,89,0.1);
+    border-radius: 50%;
+    padding: 30px;
+    position: relative;
+}
+
+.layer4 img{
+    width: 40px;
+}
+
+.female-orange{
+    position: absolute;
+    left: -4px;
+}
+
+.female-dark-pink{
+    position: absolute;
+    right: 60px;
+    top: -8px;
+}
+
+.male-brown{
+    position: absolute;
+    top: 120px;
+    right: -20px;
+}
+
+.male-orange{
+    position: absolute;
+    top: 220px;
+    right: 32px;
+}
+
+.female-white{
+    position: absolute;
+    top: 160px;
+    left: -12px;
+}
+
+/* <!-- -----MEET Your Co-Hosts / 5th section----- --> */
+#co-hosts .container{
+    background-color: #FFDE59;
+    padding-top: 100px;
+    height: 480px;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+#co-hosts h2{
+    text-align: center;
+}
+
+#co-hosts h3{
+    font-size: 48px;
+    font-weight: 700;
+}
+
+#co-hosts .row{
+    justify-content: space-around;
+    margin-block: 70px;
+    position: absolute;
+}
+
+#co-hosts p{
+    font-size: 20px;
+    line-height: 40px;
+}
+
+#co-hosts .card-left,
+#co-hosts .card-right{
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 8px;
+    flex-basis: 40%;
+    padding: 30px;
+}
+
+#co-hosts .card-left img,
+#co-hosts .card-right img{
+    width: 50px;
+    margin-right: 10px;
+}
+
+#co-hosts .card-left h3,
+#co-hosts .card-right h3{
+    margin-bottom: 10px;
+}
+
+#co-hosts .card-left a,
+#co-hosts .card-right a{
+    color: inherit;
+    text-decoration: underline;
+}
+
+/* <!-- -----NEW TO SPACES / 6th Section----- --> */
+#spaces{
+    margin-block: 220px 190px;
+}
+
+#spaces .container{
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    width: 80%;
+    margin: auto;
+    border-radius: 8px;
+    padding: 80px 0;
+}
+
+#spaces h3{
+    font-size: 48px;
+    font-weight: 700;
+}
+
+#spaces p{
+    font-size: 20px;
+    font-weight: 400;
+    margin-block: 20px;
+}
+
+/* <!-- -----PARENT FOOTER----- --> */
+footer{
+    background-color: #000;
+    color: #fff;
+    position: relative;
+}
+
+/* -----CREATOR UNDER FOOTER----- */
+#creator{
+    background-color: #fff;
+    color: #000;
+    width: 90%;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding-inline: 40px 0;
+    padding-block: 60px;
+    position: absolute;
+    top: -48px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#creator .container{
+    width: 70%;
+}
+
+#creator p{
+    font-size: 20px;
+    font-weight: 400;
+    margin-block: 20px;
+}
+
+#creator label{
+    display: block;
+}
+
+#creator input,
+#creator select,
+#creator textarea{
+    padding: 10px;
+    border-radius: 8px;
+    width: 100%;
+}
+
+form .row{
+    margin-top: 20px;
+    gap: 20px;
+}
+
+form .col-left{
+    flex-basis: 100%;
+}
+
+form .col-right{
+    flex-basis: 100%;
+}
+
+form .row label{
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+#creator button{
+    margin-top: 16px;
+}
+
+/* -----SUB FOOTER----- */
+#footer{
+    padding-top: 1150px;
+    width: 90%;
+    margin: auto;
+}
+
+#footer .container p{
+    font-size: 20px;
+}
+
+#footer .container .col-left{
+    flex-basis: 50%;
+}
+
+#footer .container input{
+    background: transparent;
+    outline: 0;
+    border: none;
+    font-size: 32px;
+    color: #fff;
+    width: 70%;
+}
+
+#footer .container .input{
+    border-bottom: 1px solid #EAEAEA;
+    margin-block: 20px;
+    padding-block: 0 20px;
+    justify-content: space-between;
+}
+
+#footer .col-right{
+    flex-basis: 36%;
+    justify-content: end;
+    column-gap: 80px;
+}
+
+#footer ul{
+    column-gap: 20px;
+}
+
+#footer ul li{
+    margin-block: 16px;
+}
+
+#footer ul li i{
+    padding-right: 12px;
+}
+
+#footer .row-bottom{
+    margin-top: 48px;
+    padding-block: 24px 12px;
+    border-top: 1px solid #EAEAEA;
+    justify-content: space-between;
+}
+
+#footer .row-bottom ul li{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/* <!-- -----MASONRY PRACTICE------ --> */
+#masonry{
+  background-color: #000;
+  padding-block: 60px;
+  padding-left: 20px;
+}
+
+
+/* -----MEDIA QUERY FOR MOBILE----- */
+@media screen and (max-width: 700px){
+    /* -----UTILITIES----- */
+    .flex{
+        flex-direction: column;
+    }
+
+    .h1{
+        font-size: 64px;
+    }
+
+    .h2{
+        font-size: 56px;
+    }
+
+    .p-work-sans{
+        font-size: 16px;
+    }
+
+    .p-roboto{
+        font-size: 24px;
+    }
+
+    #masonry{
+        /* overflow: hidden; */
+    }
+
+    .mobile-menu-header,
+    i.fa-bars{
+        display: block;
+    }
+
+    /* -----HEADER / 1st Section----- */
+    #header nav{
+        flex-direction: row;
+        position: relative;
+        width: 100%;
+        padding-inline: 40px;
+    }
+
+    .navlist{
+        align-items: start;
+        position: absolute;
+        background-color: red;
+        top: 0;
+        right: -200%;
+        padding: 20px;
+        height: 100%;
+        width: 100%;
+        /* z-index: ; */
+    }
+
+    .navlist ul li{
+        display: block;
+        margin-block: 10px;
+        padding-block: 20px;
+        border-bottom: 2px solid black;
+        font-size: 24px;  
+    }
+
+    .navlist button{
+        margin-top: 20px;
+    }
+
+    .mobile-menu-header{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .fa-bars,
+    .fa-xmark{
+        font-size: 32px;
+    }
+}
